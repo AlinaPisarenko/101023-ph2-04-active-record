@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_28_155842) do
+ActiveRecord::Schema.define(version: 2022_11_28_170041) do
 
   create_table "pizzas", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_11_28_155842) do
     t.string "size"
     t.boolean "is_good"
     t.integer "price"
+    t.boolean "is_gluten_free", default: false
   end
 
 end
